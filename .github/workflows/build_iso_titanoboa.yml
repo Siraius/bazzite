@@ -89,7 +89,7 @@ jobs:
           echo "ref=${ref}" >> $GITHUB_OUTPUT
 
       - name: Build ISOs
-        uses: ublue-os/titanoboa@main
+        uses: ublue-os/titanoboa@5c457c3d0518bd17e754be0fd98a60d29d26abb4 # main
         id: build
         with:
           image-ref: ${{ steps.registry_case.outputs.lowercase }}/${{ steps.get-nondeck-ref.outputs.ref }}:${{ steps.generate-tag.outputs.tag }}
